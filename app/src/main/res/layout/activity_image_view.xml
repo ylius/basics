@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.basics.ImageViewActivity"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:src="@drawable/bg_restaurant"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:background="#f3bb44"
+        android:scaleType="fitCenter"/>
+    <!--fitCenter: default setting, keep original ratio, show the full image,
+                   but ImageView may not be completely filled-->
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:src="@drawable/bg_restaurant"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:background="#f3bb44"
+        android:scaleType="fitXY"/>
+    <!--fitXY: stretch the image-->
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:src="@drawable/bg_restaurant"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:background="#f3bb44"
+        android:scaleType="centerCrop"/>
+    <!--centerCrop: keep original ratio, crop the image to completely fill ImageView-->
+
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_margin="5dp"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:background="#f3bb44" />
+</LinearLayout>

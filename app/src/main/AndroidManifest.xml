@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.basics">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Old phones that use an external SD card need adding following permission -->
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImageViewActivity"
+            android:label="ImageView"
+            android:screenOrientation="landscape" /> <!-- portrait by default -->
+        <activity android:name="com.example.listview.ListViewActivity" />
+        <activity android:name="com.example.gridview.GridViewActivity" />
+        <activity android:name="com.example.recyclerview.RecyclerViewActivity" />
+        <activity android:name="com.example.recyclerview.LinearRecyclerViewActivity" />
+        <activity android:name="com.example.recyclerview.HorRecyclerViewActivity" />
+        <activity android:name="com.example.recyclerview.GridRecyclerViewActivity" />
+        <activity android:name="com.example.recyclerview.StaggeredGridRecyclerViewActivity" />
+        <activity android:name="com.example.listview.ListViewActivity2" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".CustomDialogActivity" />
+        <activity android:name=".PopupWindowActivity" />
+        <activity android:name=".LifeCycleActivity" />
+        <activity
+            android:name="com.example.jump.AActivity"
+            android:label="A"
+            android:launchMode="singleTop"
+            android:taskAffinity="TaskStack.Name" /> <!-- android:launchMode="standard" by default -->
+        <!--
+        Use taskAffinity to assign this activity to a task stack. If it is not assigned,
+        this activity will be assigned to com.example.basics stack by default. Any other activities
+        invoked by this activity will be add to this task stack "TaskStack.Name". At singleTask mode,
+        we will use "TaskStack.Name" stack to check if the target activity in it or not, we will not
+        check the target activity in other stacks or not.
+        -->
+        <!-- standard, singleTop and singleTask are often used, singleInstance is seldom used. -->
+        <activity
+            android:name="com.example.jump.BActivity"
+            android:label="B"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.example.test.BActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!-- android:name="com.example.test.BActivity" can be any string -->
+        </activity>
+        <activity android:name="com.example.fragment.ContainerActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".HandlerActivity" />
+        <activity android:name="com.example.datastorage.DataStorageActivity" />
+        <activity android:name="com.example.datastorage.SharedPreferencesActivity" />
+        <activity android:name="com.example.datastorage.FileActivity" />
+        <activity android:name="com.example.datastorage.ExternalFileActivity" />
+        <activity android:name=".TextViewActivity" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".RadioButtonActivity" />
+        <activity android:name=".CheckBoxActivity"></activity>
+    </application>
+
+</manifest>

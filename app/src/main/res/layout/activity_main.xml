@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?><!--Only one child is allowed in ScrollView-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.basics.MainActivity">
+
+        <TextView
+            android:id="@+id/txt_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Button"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="EditText"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_radio_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="RadioButton"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="CheckBox"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="ImageView"
+            android:textSize="20sp" />
+
+        <!--Only one child is allowed in HorizontalScrollView-->
+        <!--        <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_list_view"
+                            android:layout_width="225dp"
+                            android:layout_height="wrap_content"
+                            android:background="#f3bb44"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="ListView"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/txt_grid_view"
+                            android:layout_width="225dp"
+                            android:layout_height="wrap_content"
+                            android:background="#f2ebd9"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="GridView"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </HorizontalScrollView>-->
+        <TextView
+            android:id="@+id/txt_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="ListView"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_list_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="ListView2"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="GridView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="RecyclerView"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="WebView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Toast"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Dialog"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Progress"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_custom_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="CustomDialog"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_popup_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="PopupWindow"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_life_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="LifeCycle"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_jump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Jump"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Fragment"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Event"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Data Store"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

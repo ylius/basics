@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LinearRecyclerView"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_hor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horizontal Scrolling"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GridRecyclerView"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_staggered_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="StaggeredGridRecyclerView"
+        android:textAllCaps="false"/>
+</LinearLayout>
