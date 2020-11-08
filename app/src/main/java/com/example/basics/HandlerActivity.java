@@ -17,6 +17,7 @@ public class HandlerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handler);
 
+//        to schedule messages and runnables to be excuted at some point in the future
 //        mHandler = new Handler();
 //        mHandler.postDelayed(new Runnable() {
 //            @Override

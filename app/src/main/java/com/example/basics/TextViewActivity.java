@@ -13,7 +13,6 @@ public class TextViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_view);
-
         mTxt4 = (TextView) findViewById(R.id.txt_4);
         mTxt4.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG); // 中划线
         mTxt4.getPaint().setAntiAlias(true); // 去锯齿

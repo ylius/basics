@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.anim.ObjectAnimActivity;
+import com.example.broadcast.BroadActivity;
 import com.example.datastorage.DataStorageActivity;
 import com.example.fragment.ContainerActivity;
 import com.example.gridview.GridViewActivity;
@@ -43,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.txt_fragment).setOnClickListener(this);
         findViewById(R.id.txt_event).setOnClickListener(this);
         findViewById(R.id.txt_data).setOnClickListener(this);
+        findViewById(R.id.txt_broadcast).setOnClickListener(this);
+        findViewById(R.id.txt_anim).setOnClickListener(this);
 
         // Need to ask for permissions dynamically if compileSdkVersion >= 23
         // 2nd parameter is a String[] includes all permissions requested.
@@ -119,6 +123,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.txt_data:
                 intent.setClass(this, DataStorageActivity.class);
+                break;
+            case R.id.txt_broadcast:
+                intent.setClass(this, BroadActivity.class);
+                break;
+            case R.id.txt_anim:
+                intent.setClass(this, ObjectAnimActivity.class);
                 break;
         }
         if (intent != null) {

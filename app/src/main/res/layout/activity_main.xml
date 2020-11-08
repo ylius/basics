@@ -261,5 +261,26 @@
             android:padding="5dp"
             android:text="Data Store"
             android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3bb44"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Broadcast"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f2ebd9"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Animation"
+            android:textSize="20sp" />
     </LinearLayout>
 </ScrollView>

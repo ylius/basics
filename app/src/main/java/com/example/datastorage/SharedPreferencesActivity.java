@@ -28,8 +28,12 @@ public class SharedPreferencesActivity extends AppCompatActivity {
         mBtnShow = (Button) findViewById(R.id.btn_show);
         mTxtContent = (TextView) findViewById(R.id.txt_content);
 
+//        /data/data/<applicationId>/shared_prefs/
+//        applicationId is not equal to package name
+//        You can assign different applicationId in debug environment and release environment
+//        MODE_PRIVATE means only Basics app can read "data", other apps cannot.
         mSharedPreferences = getSharedPreferences("data", MODE_PRIVATE);
-        // MODE_PRIVATE means only Basics app can read "data", other apps cannot.
+//        /data/data/<applicationId>/shared_prefs/data.xml
         mEditor = mSharedPreferences.edit();
 
         mBtnSave.setOnClickListener(new View.OnClickListener() {
